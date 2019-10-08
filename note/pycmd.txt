@@ -1,0 +1,50 @@
+
+
+
+
+pyinstaller --noconfirm --onefile --additional-hooks-dir="..\cv2" --noconsole --key="AHMED.midou.2112" BrailOCR_App.py
+
+
+
+
+
+pyinstaller --noconfirm --onefile --additional-hooks-dir="..\cv2" --noconsole BrailOCR_App.py
+
+pyinstaller --noconfirm --onefile mCollect.py
+
+pyinstaller --noconfirm --onefile --additional-hooks-dir="..\cv2" BrailOCR_App.py
+
+
+
+
+
+
+
+
+pyinstaller --additional-hooks-dir="C:\Users\ahmed\Desktop\python-tuto\pyInstTest\cv2"
+
+
+pyinstaller --additional-hooks-dir="..\cv2" --additional-hooks-dir=".\py" BrailOCR_App.py Auth.py ContPanel.py Display.py DotAlign.py DotCenters.py ErrorRemoval.py FileMan.py ImgProcess.py LineExtractor.py MaskUtils.py ScanGUI.py TextDecoder.py
+
+
+
+pyinstaller --noconfirm --onefile --additional-hooks-dir="..\cv2" BrailOCR_App.py
+
+pyinstaller --noconfirm --onefile --additional-hooks-dir="..\cv2" ImgProcess.py
+
+pyinstaller --noconfirm --onefile --additional-hooks-dir="..\cv2" DotCenters.py
+
+pyinstaller --noconfirm --onefile --additional-hooks-dir="..\cv2" LineExtractor.py
+
+pyinstaller --noconfirm --onefile --additional-hooks-dir="..\cv2" DotAlign.py
+
+pyinstaller --noconfirm --onefile --additional-hooks-dir="..\cv2" TextDecoder.py
+
+pyinstaller --noconfirm --onefile ErrorRemoval.py
+
+
+
+
+
+
+pyinstaller --additional-hooks-dir="..\cv2" BrailOCR_App.py Auth.py ContPanel.py Display.py DotAlign.py DotCenters.py ErrorRemoval.py FileMan.py ImgProcess.py LineExtractor.py MaskUtils.py ScanGUI.py TextDecoder.py

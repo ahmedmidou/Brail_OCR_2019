@@ -1,0 +1,223 @@
+﻿Usage:
+clscan.exe [/SetScanner "SCANNER_NAME" /SetFileName "FILE_NAME"]
+List of actions:
+ /SetScanner        Sets the scanner. Exact name must be provided.
+                    Use GetScanners to obtain a list of valid scanners name.
+
+ /GetScanners       Shows the list of available scanners. When used, it ignores 
+                    all other parameters.
+ 
+ /SetFileName       Sets the output filename. Output name could use system 
+                    variables for filename creation. Variable names are case sensitive and must be in
+                    upper case.
+                    e.g. "&HOMEPATH&\test&COUNTER&.jpg"
+                    Allowed variables:
+                      &HOMEPATH&
+                      &USERNAME&
+                      &USERDOMAIN&
+                      &USERPROFILE&
+                      &COUNTER& - in case of more files with same name
+                      (test&COUNTER&.jpg) name will be test01.jpg,test02.jpg...
+                      &DD& - Day
+                      &MM& - Month
+                      &YYYY& - Year
+                      &HH& - Hour
+                      &MIN& - Minute
+                      &SEC& - Second
+                      &MSEC& - Milisecond
+                    Type of output file is determined by the file extension.
+                    Possible extensions are "bmp", "tif", "tiff", "jpg","jpeg",
+                    "png", "pdf". Available extensions are license dependent. 
+
+ /ReadFromIni       If .ini filename is not defined it will try to use 
+                    clscan.ini in same directory where it is clscan.exe.
+                    If this action is used, other actions / parameters
+                    are ignored.
+ 
+ /ReadyFile         Writes to ReadyFile when scanning has finished.
+                    For example: /ReadyFile:"c:\test\scan_finished.txt" 
+                    will write to "c:\test\scan_finished.txt" number of 
+                    processed and scanned pages. If file doesn't exist 
+                    it will create it.
+
+ /GetResolutions    Get all available resolutions for the choosen scanner.
+                    If /SetScanner is omitted, it will show resolutions 
+                    of default scanner.
+ 
+ /SetResolution     Recommended value is 300 DPI or less. 
+                    It could be decimal value.
+  
+ /SetPageSize       Sets the page size. Use GetPageSizes to obtain a list of 
+                    valid page size for the chosen scanner. 
+                    If /SetScanner is omitted, it will show resolutions
+                    of default scanner.
+ 
+ /GetPageSizes      Shows the list of available page sizes for 
+                    the chosen scanner. If /SetScanner is omitted, it will 
+                    show resolutions of default scanner.
+  
+ /LogToFile         Name of the file where to write log. Optional.
+                    Output name could use system variables for filename 
+                    creation. Same variables as for SetFileName are 
+                    supported except &COUNTER& which doesn't exist for
+                    /LogToFile
+ 
+ /SetJpegQuality    Sets JpegQuality (in percentage) in case 
+                    of Jpeg Compression. (Jpeg files and non 
+                    Black & White Pdf files) If omitted it will use 
+                    default value (85).
+
+ /SetRotation       Rotate the scanning. Possibile values are 0,1,2,3, 4.
+                    0 - Portrait (0 degree rotation)
+                    1 - 90 degree rotation
+                    2 - 180 degree rotation
+                    3 - Landscape (270 degree rotation)
+                    If ommitted, value of SetRotation is 0.
+                    Many scanners doesn't support setting rotation.
+
+ /SetSource         Example of possibile values: Auto, ADF or Flatbed
+
+ /SetDeskew         If scanner has that capability, it tries to deskew 
+                    selected image.
+
+ /SetCrop           If scanner has that capability, it tries to 
+                    automatically detect paper size in the scanner.
+ 
+ /GetSources        Get list of supported sources  
+
+ /SetTransferType   Possibile values: Memory, File or Native
+
+ /SetDuplex         Sets duplex for the chosen scanner.
+                    Value Y will use duplex. Value N will not use duplex.
+                    If omitted, scanner default will be used.
+ 
+ /SetColorType      Sets color type.
+
+ /GetColorTypes     Shows the list of available color types for the 
+                    chosen scanner. If /SetScanner is omitted, it will 
+                    show resolutions of default scanner.
+ 
+ /SetThreshold      Sets treshold. Effective only for BW color type.
+ 
+ /GetThreshold      Gets threshold for the chosen scanner.
+                    If supported, in most cases is between 0 and
+                    and 255 with default 128. Effective only with 
+                    BW color type.
+
+ /SetContrast       Sets contrast for the chosen scanner.
+ 
+ /GetContrast       Gets contrast for the chosen scanner.
+                    If supported, in most cases is between -1000
+                    and 1000 with default 0.
+ 
+ /SetBrightness     Sets brightness for the chosen scanner.
+
+ /GetBrightness     Gets brightness for the chosen scanner.
+                    If supported, in most cases is between -1000
+                    and 1000 with default 0.
+  
+ /SetNumberOfImages Sets the number of images for the chosen scanner 
+                    to be scanned from ADF scanner.
+                    This parameter is used when scanning from 
+                    an ADF scanner which has more pages inserted for 
+                    scanning then you need. You can also scan single 
+                    images from an ADF scanner using this parameter.
+                    If -1 it will scan all pages in the scanner.
+                    If omitted it will print images as defined in 
+                    scanner default.
+ 
+ /SetMultiFile      Defines that in ADF scanning every image will be 
+                    scanned to its own file. If output filename doesn't 
+                    have any variable in the name, COUNTER variable will be 
+                    automatically added. If omitted and output file isn't 
+                    PDF / TIFF file existing file with the same name will 
+                    be ovveriden. To avoid that, use COUNTER variable.
+                    If scanning isn't ADF, this flag is ignored.
+
+ /SetInvert         Inverts the image.
+
+ /SetConfig         Opens config screen.
+
+ /ShowUI            Shows scanner UI dialog.
+
+ /UseScan2          Uses alternative scan engine.
+
+ /License           Shows license dialog.
+
+ /Help              Shows this help.
+
+ /IgnoreBlankPages  Ignores blank pages.
+
+ /BlankPageThreshold Percentage of darkness which is allowed to 
+                     consider something as non blank page.
+                    Default is 1%. Allowed values are decimal values
+                    between 0 and 100 with decimal point.
+                    (for example 2.5 will consider everything bellow 
+                    2.5% of darkness as blank page)
+                    This switch has effect only in combination 
+                    with /IgnoreBlankPages switch.
+
+Important note:
+CLScan in some cases, when launched from some web applications (e.g. PHP), doesn't have available 
+console which is used to display the visual output from CLScan. 
+For example if you execute /getscanners or some similar command. 
+If you have the need for a visual output, you can do a console redirection to some file.
+It can be done like this:
+clscan /getscanners > output.txt
+This command will write the output of /getscanners switch to output.txt file.
+					
+Examples:
+clscan.exe /Help
+It shows this help.
+
+clscan.exe /ReadFromIni "c:\clscan.ini"
+It will use settings defined in "c:\clscan.ini" file.
+
+clscan.exe /ReadFromIni
+It will use settings defined in clscan.ini file.
+If file isn't find in same directory as clscan.exe it will give error.
+
+clscan.exe /GetScanners
+It will list all available scanners.
+
+clscan.exe /GetResolutions /GetPageSizes /GetColorTypes /SetScanner "EPSON Perfection V19"
+It will list all available resolutions, page sizes and color types 
+for "LX100_Scanner". If /SetScanner is omitted, it will show available 
+resolutions, page sizes and color for default scanner.
+
+clscan.exe /LogToFile "C:\scan_log\log.txt" 
+           /SetFileName "C:\scan_result\testImage.tiff"
+It will do the scanning from the default scanner and it will create 
+tiff file in "c:\scan_result\testImage.tiff".
+It will write all relevant information in log file "c:\scan_log\log.txt"
+
+clscan.exe /LogToFile "C:\scan_log\log.txt"
+           /SetFileName "&HOMEPATH&\testImage&COUNTER&.tiff"
+if &HOMEPATH& is "c:\test_scanning\" and if scanning creates 
+two files, result will be files:
+c:\test_scanning\testImage01.tiff
+c:\test_scanning\testImage02.tiff
+
+It will write all relevant information in log file "c:\scan_log\log.txt"
+
+clscan.exe /LogToFile "C:\scan_log\log.txt" 
+           /SetFileName "C:\scan_result\testImage.tiff" /SetContrast "45" 
+           /SetBrightness "50" /SetTreshold "40" /SetJpegQuality "90"
+           /SetSource ADF /SetScanner "LX100_Scanner" /SetNumberOfImages 3
+           /SetDuplex:Y /SetColorType "RGB" /SetPageSize "USLETTER"
+
+It will do the scanning from scanner "LX100_Scanner" and it will create one 
+tiff file in "c:\scan_result\testImage.tiff" with 3 images scanned 
+from the scanner using definied values for contrast, brightness, threshold,
+jpegquality and color type.
+It will write all relevant information in log file "c:\scan_log\log.txt"
+
+clscan.exe /LogToFile "C:\scan_log\log.txt" 
+           /SetFileName "C:\scan_result\testImage.tiff" /SetContrast "45" 
+           /SetBrightness "50" /SetTreshold "40" /SetJpegQuality "90"
+           /SetSource ADF /SetScanner "LX100_Scanner" /SetNumberOfImages 3
+           /SetMultiFile /SetDuplex:Y /SetColorType "RGB" /SetPageSize "USLETTER"
+
+Different from the previous example is that here is used /SetMultiFile which
+means it will create 3 different output files with names testImage01.tiff,
+testImage02.tiff and testImage03.tiff.

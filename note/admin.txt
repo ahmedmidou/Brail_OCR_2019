@@ -1,0 +1,334 @@
+﻿
+
+https://stackoverflow.com/questions/19672352/how-to-run-python-script-with-elevated-privilege-on-windows
+
+I am writing a pyqt application which require to execute admin task. I would prefer to start my script with elevate privilege. I am aware that this question is asked many times in SO or in other forum. But the solution people are suggesting is to have a look at this SO question Request UAC elevation from within a Python script?
+
+However, I am unable to execute the sample code given in the link. I have put this code on top of the main file and tried to execute it.
+
+import os
+import sys
+import win32com.shell.shell as shell
+ASADMIN = 'asadmin'
+
+if sys.argv[-1] != ASADMIN:
+    script = os.path.abspath(sys.argv[0])
+    params = ' '.join([script] + sys.argv[1:] + [ASADMIN])
+    shell.ShellExecuteEx(lpVerb='runas', lpFile=sys.executable, lpParameters=params)
+    sys.exit(0)
+print "I am root now."
+
+It actually ask permission to elevate but print line never get executed. Somebody can help me to run the above code successfully. Thanks in advance.
+
+    remove sys.exit(0) and put the print inside the if block – Leonardo.Z Oct 30 '13 at 1:44
+    Thank you. That worked. I would accept as answer if you could have posted as answer. – sundar_ima Oct 30 '13 at 2:00
+    There's a error in my first comment. The position of the print statement is right, after putting it inside the if block, it will not be executed when the script is run by the asadmin command. – Leonardo.Z Oct 30 '13 at 2:22
+
+Thank you all for your reply. I have got my script working with the module/ script written by Preston Landers way back in 2010. After two days of browsing the internet I could find the script as it was was deeply hidden in pywin32 mailing list. With this script it is easier to check if the user is admin and if not then ask for UAC/ admin right. It does provide output in separate windows to find out what the code is doing. Example on how to use the code also included in the script. For the benefit of all who all are looking for UAC on windows have a look at this code. I hope it helps someone looking for same solution. It can be used something like this from your main script:-
+
+import admin
+if not admin.isUserAdmin():
+        admin.runAsAdmin()
+
+The actual code is:-
+
+#!/usr/bin/env python
+# -*- coding: utf-8; mode: python; py-indent-offset: 4; indent-tabs-mode: nil -*-
+# vim: fileencoding=utf-8 tabstop=4 expandtab shiftwidth=4
+
+# (C) COPYRIGHT © Preston Landers 2010
+# Released under the same license as Python 2.6.5
+
+
+import sys, os, traceback, types
+
+def isUserAdmin():
+
+    if os.name == 'nt':
+        import ctypes
+        # WARNING: requires Windows XP SP2 or higher!
+        try:
+            return ctypes.windll.shell32.IsUserAnAdmin()
+        except:
+            traceback.print_exc()
+            print "Admin check failed, assuming not an admin."
+            return False
+    elif os.name == 'posix':
+        # Check for root on Posix
+        return os.getuid() == 0
+    else:
+        raise RuntimeError, "Unsupported operating system for this module: %s" % (os.name,)
+
+def runAsAdmin(cmdLine=None, wait=True):
+
+    if os.name != 'nt':
+        raise RuntimeError, "This function is only implemented on Windows."
+
+    import win32api, win32con, win32event, win32process
+    from win32com.shell.shell import ShellExecuteEx
+    from win32com.shell import shellcon
+
+    python_exe = sys.executable
+
+    if cmdLine is None:
+        cmdLine = [python_exe] + sys.argv
+    elif type(cmdLine) not in (types.TupleType,types.ListType):
+        raise ValueError, "cmdLine is not a sequence."
+    cmd = '"%s"' % (cmdLine[0],)
+    # XXX TODO: isn't there a function or something we can call to massage command line params?
+    params = " ".join(['"%s"' % (x,) for x in cmdLine[1:]])
+    cmdDir = ''
+    showCmd = win32con.SW_SHOWNORMAL
+    #showCmd = win32con.SW_HIDE
+    lpVerb = 'runas'  # causes UAC elevation prompt.
+
+    # print "Running", cmd, params
+
+    # ShellExecute() doesn't seem to allow us to fetch the PID or handle
+    # of the process, so we can't get anything useful from it. Therefore
+    # the more complex ShellExecuteEx() must be used.
+
+    # procHandle = win32api.ShellExecute(0, lpVerb, cmd, params, cmdDir, showCmd)
+
+    procInfo = ShellExecuteEx(nShow=showCmd,
+                              fMask=shellcon.SEE_MASK_NOCLOSEPROCESS,
+                              lpVerb=lpVerb,
+                              lpFile=cmd,
+                              lpParameters=params)
+
+    if wait:
+        procHandle = procInfo['hProcess']    
+        obj = win32event.WaitForSingleObject(procHandle, win32event.INFINITE)
+        rc = win32process.GetExitCodeProcess(procHandle)
+        #print "Process handle %s returned code %s" % (procHandle, rc)
+    else:
+        rc = None
+
+    return rc
+
+def test():
+    rc = 0
+    if not isUserAdmin():
+        print "You're not an admin.", os.getpid(), "params: ", sys.argv
+        #rc = runAsAdmin(["c:\\Windows\\notepad.exe"])
+        rc = runAsAdmin()
+    else:
+        print "You are an admin!", os.getpid(), "params: ", sys.argv
+        rc = 0
+    x = raw_input('Press Enter to exit.')
+    return rc
+
+
+if __name__ == "__main__":
+    sys.exit(test())
+
+    Thank you very much for this answer. I had the problem that my Qt GUI did not show up completely when it was executed with shellexecuteEX, your extensive command with the showcommand helped me to make it work. Thanks! :) – Ecno92 Dec 27 '13 at 9:50
+    Thank you,had to add the nShow and fMask params for it to work with a Qt gui. – frmdstryr Jan 20 '15 at 15:14
+    Very good, I was trying to figure out how to do it right now to write a installer for my app. – Elvis Teixeira Nov 13 '15 at 16:03
+    Can you post a link to in pywin32 mailing list the code comes from ?? – Mr_and_Mrs_D May 29 '16 at 13:30
+    1
+    Here is the same script forked on github for python3 gist.github.com/sylvainpelissier/… – Hrvoje T Mar 8 '18 at 7:46
+
+show 2 more comments
+8
+
+in comments to the answer you took the code from someone says ShellExecuteEx doesn't post its STDOUT back to the originating shell. so you will not see "I am root now", even though the code is probably working fine.
+
+instead of printing something, try writing to a file:
+
+import os
+import sys
+import win32com.shell.shell as shell
+ASADMIN = 'asadmin'
+
+if sys.argv[-1] != ASADMIN:
+    script = os.path.abspath(sys.argv[0])
+    params = ' '.join([script] + sys.argv[1:] + [ASADMIN])
+    shell.ShellExecuteEx(lpVerb='runas', lpFile=sys.executable, lpParameters=params)
+    sys.exit(0)
+with open("somefilename.txt", "w") as out:
+    print >> out, "i am root"
+
+and then look in the file.
+shareimprove this answer
+edited May 23 '17 at 12:10
+Community♦
+11
+answered Oct 30 '13 at 21:36
+andrew cooke
+35.7k670129
+
+    But it never bring up my pyqt window at all. Tested the code with ZetCode zetcode.com/gui/pyqt4/firstprograms – sundar_ima Oct 31 '13 at 1:09
+    6
+    that's a strange way to say thank-you, but you're welcome. – andrew cooke Oct 31 '13 at 1:11
+    but this prompt for permission. Is there any way i can skip that – deenbandhu May 31 '17 at 14:06
+
+add a comment
+6
+
+Here is a solution with an stdout redirection:
+
+def elevate():
+    import ctypes, win32com.shell.shell, win32event, win32process
+    outpath = r'%s\%s.out' % (os.environ["TEMP"], os.path.basename(__file__))
+    if ctypes.windll.shell32.IsUserAnAdmin():
+        if os.path.isfile(outpath):
+            sys.stderr = sys.stdout = open(outpath, 'w', 0)
+        return
+    with open(outpath, 'w+', 0) as outfile:
+        hProc = win32com.shell.shell.ShellExecuteEx(lpFile=sys.executable, \
+            lpVerb='runas', lpParameters=' '.join(sys.argv), fMask=64, nShow=0)['hProcess']
+        while True:
+            hr = win32event.WaitForSingleObject(hProc, 40)
+            while True:
+                line = outfile.readline()
+                if not line: break
+                sys.stdout.write(line)
+            if hr != 0x102: break
+    os.remove(outpath)
+    sys.stderr = ''
+    sys.exit(win32process.GetExitCodeProcess(hProc))
+
+if __name__ == '__main__':
+    elevate()
+    main()
+
+shareimprove this answer
+answered Jul 20 '15 at 6:11
+Florent B.
+27.9k33366
+add a comment
+5
+
+Here is a solution which needed ctypes module only. Support pyinstaller wrapped program.
+
+#!python
+# coding: utf-8
+import sys
+import ctypes
+
+def run_as_admin(argv=None, debug=False):
+    shell32 = ctypes.windll.shell32
+    if argv is None and shell32.IsUserAnAdmin():
+        return True
+
+    if argv is None:
+        argv = sys.argv
+    if hasattr(sys, '_MEIPASS'):
+        # Support pyinstaller wrapped program.
+        arguments = map(unicode, argv[1:])
+    else:
+        arguments = map(unicode, argv)
+    argument_line = u' '.join(arguments)
+    executable = unicode(sys.executable)
+    if debug:
+        print 'Command line: ', executable, argument_line
+    ret = shell32.ShellExecuteW(None, u"runas", executable, argument_line, None, 1)
+    if int(ret) <= 32:
+        return False
+    return None
+
+
+if __name__ == '__main__':
+    ret = run_as_admin()
+    if ret is True:
+        print 'I have admin privilege.'
+        raw_input('Press ENTER to exit.')
+    elif ret is None:
+        print 'I am elevating to admin privilege.'
+        raw_input('Press ENTER to exit.')
+    else:
+        print 'Error(ret=%d): cannot elevate privilege.' % (ret, )
+
+shareimprove this answer
+answered Nov 22 '15 at 14:58
+Gary Lee
+6913
+
+    Hello, it does ask for elevation, but once I click yes, the program for some odd reason runs twice. Any input on that? – tomSurge Dec 21 '15 at 22:37
+    1
+    It runs twice because the first time it's launching a new instance of the program as an admin. You need to exit the program if his function doesn't return True. Or, you might change this a bit to launch a different program, using this one just a "launch pad". – BuvinJ Mar 4 '17 at 21:39
+    Thank you! Is there a way to get the new process' output in the original terminal and not open an additional window? – Niklas R Jul 28 '17 at 13:16
+
+add a comment
+2
+
+I found a very easy solution to this problem.
+
+    Create a shortcut for python.exe
+    Change the shortcut target into something like C:\xxx\...\python.exe your_script.py
+    Click "advance..." in the property panel of the shortcut, and click the option "run as administrator"
+
+I'm not sure whether the spells of these options are right, since I'm using Chinese version of Windows.
+shareimprove this answer
+answered Sep 21 '15 at 15:49
+delphifirst
+712618
+add a comment
+0
+
+I can confirm that the solution by delphifirst works and is the easiest, simplest solution to the problem of running a python script with elevated privileges.
+
+I created a shortcut to the python executable (python.exe) and then modified the shortcut by adding my script's name after the call to python.exe. Next I checked "run as administrator" on the "compatibility tab" of the shortcut. When the shortcut is executed, you get a prompt asking permission to run the script as an administrator.
+
+My particular python application was an installer program. The program allows installing and uninstalling another python app. In my case I created two shortcuts, one named "appname install" and the other named "appname uninstall". The only difference between the two shortcuts is the argument following the python script name. In the installer version the argument is "install". In the uninstall version the argument is "uninstall". Code in the installer script evaluates the argument supplied and calls the appropriate function (install or uninstall) as needed.
+
+I hope my explanation helps others more quickly figure out how to run a python script with elevated privileges.
+shareimprove this answer
+answered Dec 6 '16 at 17:32
+John Moore
+312
+add a comment
+0
+
+Also if your working directory is different than you can use lpDirectory
+
+    procInfo = ShellExecuteEx(nShow=showCmd,
+                          lpVerb=lpVerb,
+                          lpFile=cmd,
+                          lpDirectory= unicode(direc),
+                          lpParameters=params)
+
+Will come handy if changing the path is not a desirable option remove unicode for python 3.X
+shareimprove this answer
+answered Feb 28 '17 at 6:13
+Pranav
+84
+add a comment
+Your Answer
+
+Sign up or log in
+Sign up using Google
+Sign up using Facebook
+Sign up using Email and Password
+Post as a guest
+Name
+Email
+
+Required, but never shown
+
+By clicking “Post Your Answer”, you agree to our terms of service, privacy policy and cookie policy
+
+https://www.youtube.com/watch?v=e1Q46HO6qc4
+
+ de Moïse Les dix Commandement film en français film complet
+10 721 vues
+
+
+
+Film – Le Prophète Moïse Moussa - YouTube
+
+
+DMIN.py", line 114, in test
+    rc = runAsAdmin()
+  File "ADMIN.py", line 68, in runAsAdmin
+    import win32api, win32con, win32event, win32process
+ModuleNotFoundError: No module named 'win32api
+
+https://www.lfd.uci.edu/~gohlke/pythonlibs/#pywin32
+
+
+
+is command:
+
+pip install pypiwin32

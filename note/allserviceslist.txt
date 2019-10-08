@@ -1,0 +1,2333 @@
+
+SERVICE_NAME: AJRouter
+DISPLAY_NAME: Service de routeur AllJoyn
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 1  STOPPED 
+        WIN32_EXIT_CODE    : 1077  (0x435)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: ALG
+DISPLAY_NAME: Service de la passerelle de la couche Application
+        TYPE               : 10  WIN32_OWN_PROCESS  
+        STATE              : 1  STOPPED 
+        WIN32_EXIT_CODE    : 1077  (0x435)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: AppIDSvc
+DISPLAY_NAME: Identit‚ de l?application
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 1  STOPPED 
+        WIN32_EXIT_CODE    : 1077  (0x435)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: Appinfo
+DISPLAY_NAME: Informations d?application
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 4  RUNNING 
+                                (STOPPABLE, NOT_PAUSABLE, IGNORES_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: AppMgmt
+DISPLAY_NAME: Gestion d?applications
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 1  STOPPED 
+        WIN32_EXIT_CODE    : 1077  (0x435)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: AppReadiness
+DISPLAY_NAME: Pr‚paration des applications
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 1  STOPPED 
+        WIN32_EXIT_CODE    : 1077  (0x435)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: AppVClient
+DISPLAY_NAME: Microsoft App-V Client
+        TYPE               : 10  WIN32_OWN_PROCESS  
+        STATE              : 1  STOPPED 
+        WIN32_EXIT_CODE    : 1077  (0x435)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: AppXSvc
+DISPLAY_NAME: Service de d‚ploiement AppX (AppXSVC)
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 1  STOPPED 
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: AudioEndpointBuilder
+DISPLAY_NAME: G‚n‚rateur de points de terminaison du service Audio Windows
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 4  RUNNING 
+                                (STOPPABLE, NOT_PAUSABLE, IGNORES_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: Audiosrv
+DISPLAY_NAME: Audio Windows
+        TYPE               : 10  WIN32_OWN_PROCESS  
+        STATE              : 4  RUNNING 
+                                (STOPPABLE, NOT_PAUSABLE, IGNORES_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: AxInstSV
+DISPLAY_NAME: Programme d?installation ActiveX (AxInstSV)
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 1  STOPPED 
+        WIN32_EXIT_CODE    : 1077  (0x435)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: BDESVC
+DISPLAY_NAME: Service de chiffrement de lecteur BitLocker
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 1  STOPPED 
+        WIN32_EXIT_CODE    : 1077  (0x435)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: BFE
+DISPLAY_NAME: Moteur de filtrage de base
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 4  RUNNING 
+                                (STOPPABLE, NOT_PAUSABLE, IGNORES_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: BITS
+DISPLAY_NAME: Service de transfert intelligent en arriŠre-plan
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 4  RUNNING 
+                                (STOPPABLE, NOT_PAUSABLE, IGNORES_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: BrokerInfrastructure
+DISPLAY_NAME: Service d?infrastructure des tƒches en arriŠre-plan
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 4  RUNNING 
+                                (NOT_STOPPABLE, NOT_PAUSABLE, IGNORES_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: Browser
+DISPLAY_NAME: Explorateur d?ordinateurs
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 1  STOPPED 
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: BthHFSrv
+DISPLAY_NAME: Service mains libres Bluetooth
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 1  STOPPED 
+        WIN32_EXIT_CODE    : 1077  (0x435)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: bthserv
+DISPLAY_NAME: Service de prise en charge Bluetooth
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 1  STOPPED 
+        WIN32_EXIT_CODE    : 1077  (0x435)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: CDPSvc
+DISPLAY_NAME: Service de plateforme des appareils connect‚s
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 4  RUNNING 
+                                (STOPPABLE, NOT_PAUSABLE, IGNORES_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: CertPropSvc
+DISPLAY_NAME: Propagation du certificat
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 1  STOPPED 
+        WIN32_EXIT_CODE    : 1077  (0x435)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: ClipSVC
+DISPLAY_NAME: Service de licences de client (ClipSVC)
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 1  STOPPED 
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: COMSysApp
+DISPLAY_NAME: Application systŠme COM+
+        TYPE               : 10  WIN32_OWN_PROCESS  
+        STATE              : 1  STOPPED 
+        WIN32_EXIT_CODE    : 1077  (0x435)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: CoreMessagingRegistrar
+DISPLAY_NAME: CoreMessaging
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 4  RUNNING 
+                                (NOT_STOPPABLE, NOT_PAUSABLE, IGNORES_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: cphs
+DISPLAY_NAME: Intel(R) Content Protection HECI Service
+        TYPE               : 10  WIN32_OWN_PROCESS  
+        STATE              : 4  RUNNING 
+                                (STOPPABLE, NOT_PAUSABLE, IGNORES_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: cplspcon
+DISPLAY_NAME: Intel(R) Content Protection HDCP Service
+        TYPE               : 10  WIN32_OWN_PROCESS  
+        STATE              : 4  RUNNING 
+                                (STOPPABLE, NOT_PAUSABLE, IGNORES_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: CryptSvc
+DISPLAY_NAME: Services de chiffrement
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 4  RUNNING 
+                                (STOPPABLE, NOT_PAUSABLE, ACCEPTS_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: CscService
+DISPLAY_NAME: Fichiers hors connexion
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 1  STOPPED 
+        WIN32_EXIT_CODE    : 1077  (0x435)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: DcomLaunch
+DISPLAY_NAME: Lanceur de processus serveur DCOM
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 4  RUNNING 
+                                (NOT_STOPPABLE, NOT_PAUSABLE, IGNORES_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: DcpSvc
+DISPLAY_NAME: DataCollectionPublishingService
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 1  STOPPED 
+        WIN32_EXIT_CODE    : 1077  (0x435)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: DDVCollectorSvcApi
+DISPLAY_NAME: Dell Data Vault Service API
+        TYPE               : 10  WIN32_OWN_PROCESS  
+        STATE              : 4  RUNNING 
+                                (STOPPABLE, NOT_PAUSABLE, IGNORES_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: DDVDataCollector
+DISPLAY_NAME: Dell Data Vault Collector
+        TYPE               : 10  WIN32_OWN_PROCESS  
+        STATE              : 4  RUNNING 
+                                (STOPPABLE, NOT_PAUSABLE, ACCEPTS_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: DDVRulesProcessor
+DISPLAY_NAME: Dell Data Vault Processor
+        TYPE               : 10  WIN32_OWN_PROCESS  
+        STATE              : 4  RUNNING 
+                                (STOPPABLE, NOT_PAUSABLE, IGNORES_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: defragsvc
+DISPLAY_NAME: Optimiser les lecteurs
+        TYPE               : 10  WIN32_OWN_PROCESS  
+        STATE              : 1  STOPPED 
+        WIN32_EXIT_CODE    : 1077  (0x435)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: Dell Hardware Support
+DISPLAY_NAME: Dell Hardware Support
+        TYPE               : 10  WIN32_OWN_PROCESS  
+        STATE              : 4  RUNNING 
+                                (STOPPABLE, NOT_PAUSABLE, ACCEPTS_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: DeviceAssociationService
+DISPLAY_NAME: Service d?association de p‚riph‚rique
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 4  RUNNING 
+                                (STOPPABLE, NOT_PAUSABLE, ACCEPTS_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: DeviceInstall
+DISPLAY_NAME: Service d?installation de p‚riph‚rique
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 1  STOPPED 
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: DevQueryBroker
+DISPLAY_NAME: Service Broker de d‚couverte en arriŠre-plan DevQuery
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 1  STOPPED 
+        WIN32_EXIT_CODE    : 1077  (0x435)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: Dhcp
+DISPLAY_NAME: Client DHCP
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 4  RUNNING 
+                                (STOPPABLE, NOT_PAUSABLE, ACCEPTS_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: diagnosticshub.standardcollector.service
+DISPLAY_NAME: Service Collecteur standard du concentrateur de diagnostic Microsoft (R)
+        TYPE               : 10  WIN32_OWN_PROCESS  
+        STATE              : 1  STOPPED 
+        WIN32_EXIT_CODE    : 1077  (0x435)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: DiagTrack
+DISPLAY_NAME: Exp‚riences des utilisateurs connect‚s et t‚l‚m‚trie
+        TYPE               : 10  WIN32_OWN_PROCESS  
+        STATE              : 4  RUNNING 
+                                (STOPPABLE, NOT_PAUSABLE, ACCEPTS_PRESHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: DmEnrollmentSvc
+DISPLAY_NAME: Service d'inscription de la gestion des p‚riph‚riques
+        TYPE               : 10  WIN32_OWN_PROCESS  
+        STATE              : 1  STOPPED 
+        WIN32_EXIT_CODE    : 1077  (0x435)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: dmwappushservice
+DISPLAY_NAME: dmwappushsvc
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 1  STOPPED 
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: Dnscache
+DISPLAY_NAME: Client DNS
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 4  RUNNING 
+                                (STOPPABLE, NOT_PAUSABLE, IGNORES_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: DoSvc
+DISPLAY_NAME: Optimisation de livraison
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 1  STOPPED 
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: dot3svc
+DISPLAY_NAME: Configuration automatique de r‚seau cƒbl‚
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 1  STOPPED 
+        WIN32_EXIT_CODE    : 1077  (0x435)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: DPS
+DISPLAY_NAME: Service de strat‚gie de diagnostic
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 4  RUNNING 
+                                (STOPPABLE, NOT_PAUSABLE, ACCEPTS_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: DsmSvc
+DISPLAY_NAME: Gestionnaire d?installation de p‚riph‚rique
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 4  RUNNING 
+                                (STOPPABLE, NOT_PAUSABLE, ACCEPTS_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: DsSvc
+DISPLAY_NAME: Service de partage des donn‚es
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 1  STOPPED 
+        WIN32_EXIT_CODE    : 1077  (0x435)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: EapHost
+DISPLAY_NAME: Protocole EAP (Extensible Authentication Protocol)
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 1  STOPPED 
+        WIN32_EXIT_CODE    : 1077  (0x435)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: EFS
+DISPLAY_NAME: SystŠme de fichiers EFS (Encrypting File System)
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 1  STOPPED 
+        WIN32_EXIT_CODE    : 1077  (0x435)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: ekrn
+DISPLAY_NAME: ESET Service
+        TYPE               : 120  WIN32_SHARE_PROCESS  (interactive)
+        STATE              : 4  RUNNING 
+                                (NOT_STOPPABLE, NOT_PAUSABLE, ACCEPTS_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: ekrnEpfw
+DISPLAY_NAME: ESET Firewall Helper
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 4  RUNNING 
+                                (NOT_STOPPABLE, NOT_PAUSABLE, ACCEPTS_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: embeddedmode
+DISPLAY_NAME: Mode incorpor‚
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 1  STOPPED 
+        WIN32_EXIT_CODE    : 1077  (0x435)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: EntAppSvc
+DISPLAY_NAME: Service de gestion des applications d'entreprise
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 1  STOPPED 
+        WIN32_EXIT_CODE    : 1077  (0x435)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: EpsonScanSvc
+DISPLAY_NAME: Epson Scanner Service
+        TYPE               : 10  WIN32_OWN_PROCESS  
+        STATE              : 4  RUNNING 
+                                (STOPPABLE, NOT_PAUSABLE, ACCEPTS_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: EventLog
+DISPLAY_NAME: Journal d?‚v‚nements Windows
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 4  RUNNING 
+                                (STOPPABLE, NOT_PAUSABLE, ACCEPTS_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: EventSystem
+DISPLAY_NAME: SystŠme d?‚v‚nement COM+
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 4  RUNNING 
+                                (STOPPABLE, NOT_PAUSABLE, IGNORES_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: Ext2Srv
+DISPLAY_NAME: Ext2 Management Service
+        TYPE               : 10  WIN32_OWN_PROCESS  
+        STATE              : 4  RUNNING 
+                                (STOPPABLE, NOT_PAUSABLE, ACCEPTS_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: Fax
+DISPLAY_NAME: T‚l‚copie
+        TYPE               : 10  WIN32_OWN_PROCESS  
+        STATE              : 1  STOPPED 
+        WIN32_EXIT_CODE    : 1077  (0x435)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: fdPHost
+DISPLAY_NAME: H“te du fournisseur de d‚couverte de fonctions
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 1  STOPPED 
+        WIN32_EXIT_CODE    : 1077  (0x435)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: FDResPub
+DISPLAY_NAME: Publication des ressources de d‚couverte de fonctions
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 1  STOPPED 
+        WIN32_EXIT_CODE    : 1077  (0x435)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: fhsvc
+DISPLAY_NAME: Service d?historique des fichiers
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 1  STOPPED 
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: FontCache
+DISPLAY_NAME: Service de cache de police Windows
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 4  RUNNING 
+                                (STOPPABLE, NOT_PAUSABLE, ACCEPTS_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: FontCache3.0.0.0
+DISPLAY_NAME: Cache de police de Windows Presentation Foundationÿ3.0.0.0
+        TYPE               : 10  WIN32_OWN_PROCESS  
+        STATE              : 4  RUNNING 
+                                (STOPPABLE, NOT_PAUSABLE, ACCEPTS_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: FrameServer
+DISPLAY_NAME: Serveur de trame de la Cam‚ra Windows
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 1  STOPPED 
+        WIN32_EXIT_CODE    : 1077  (0x435)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: GoogleChromeElevationService
+DISPLAY_NAME: Google Chrome Elevation Service
+        TYPE               : 10  WIN32_OWN_PROCESS  
+        STATE              : 1  STOPPED 
+        WIN32_EXIT_CODE    : 1077  (0x435)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: gpsvc
+DISPLAY_NAME: Client de strat‚gie de groupe
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 1  STOPPED 
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: gupdate
+DISPLAY_NAME: Service Google Update (gupdate)
+        TYPE               : 10  WIN32_OWN_PROCESS  
+        STATE              : 1  STOPPED 
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: gupdatem
+DISPLAY_NAME: Service Google Update (gupdatem)
+        TYPE               : 10  WIN32_OWN_PROCESS  
+        STATE              : 1  STOPPED 
+        WIN32_EXIT_CODE    : 1077  (0x435)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: hidserv
+DISPLAY_NAME: Service du p‚riph‚rique d?interface utilisateur
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 4  RUNNING 
+                                (STOPPABLE, NOT_PAUSABLE, ACCEPTS_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: HomeGroupListener
+DISPLAY_NAME: ?couteur du Groupement r‚sidentiel
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 1  STOPPED 
+        WIN32_EXIT_CODE    : 1077  (0x435)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: HomeGroupProvider
+DISPLAY_NAME: Fournisseur du Groupement r‚sidentiel
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 1  STOPPED 
+        WIN32_EXIT_CODE    : 1077  (0x435)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: HvHost
+DISPLAY_NAME: Service d'h“te HV
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 1  STOPPED 
+        WIN32_EXIT_CODE    : 1077  (0x435)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: IAStorDataMgrSvc
+DISPLAY_NAME: Intel(R) Rapid Storage Technology
+        TYPE               : 10  WIN32_OWN_PROCESS  
+        STATE              : 4  RUNNING 
+                                (STOPPABLE, NOT_PAUSABLE, ACCEPTS_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: icssvc
+DISPLAY_NAME: Service Point d'accŠs sans fil mobile Windows
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 1  STOPPED 
+        WIN32_EXIT_CODE    : 1077  (0x435)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: igfxCUIService2.0.0.0
+DISPLAY_NAME: Intel(R) HD Graphics Control Panel Service
+        TYPE               : 10  WIN32_OWN_PROCESS  
+        STATE              : 4  RUNNING 
+                                (STOPPABLE, NOT_PAUSABLE, IGNORES_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: IKEEXT
+DISPLAY_NAME: Modules de g‚n‚ration de cl‚s IKE et AuthIP
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 4  RUNNING 
+                                (STOPPABLE, NOT_PAUSABLE, ACCEPTS_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: Intel(R) Capability Licensing Service TCP IP Interface
+DISPLAY_NAME: Intel(R) Capability Licensing Service TCP IP Interface
+        TYPE               : 10  WIN32_OWN_PROCESS  
+        STATE              : 1  STOPPED 
+        WIN32_EXIT_CODE    : 1077  (0x435)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: Intel(R) TPM Provisioning Service
+DISPLAY_NAME: Intel(R) TPM Provisioning Service
+        TYPE               : 10  WIN32_OWN_PROCESS  
+        STATE              : 1  STOPPED 
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: InternetEverywhere_Service
+DISPLAY_NAME: Internet Everywhere Service
+        TYPE               : 10  WIN32_OWN_PROCESS  
+        STATE              : 4  RUNNING 
+                                (STOPPABLE, NOT_PAUSABLE, IGNORES_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: iphlpsvc
+DISPLAY_NAME: Assistance IP
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 4  RUNNING 
+                                (STOPPABLE, NOT_PAUSABLE, IGNORES_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: irmon
+DISPLAY_NAME: Service Moniteur infrarouge
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 1  STOPPED 
+        WIN32_EXIT_CODE    : 1077  (0x435)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: jhi_service
+DISPLAY_NAME: Intel(R) Dynamic Application Loader Host Interface Service
+        TYPE               : 10  WIN32_OWN_PROCESS  
+        STATE              : 4  RUNNING 
+                                (STOPPABLE, NOT_PAUSABLE, IGNORES_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: JTVNCProxy_17.0
+DISPLAY_NAME: JTVNCProxy_17.0
+        TYPE               : 10  WIN32_OWN_PROCESS  
+        STATE              : 1  STOPPED 
+        WIN32_EXIT_CODE    : 1077  (0x435)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: KeyIso
+DISPLAY_NAME: Isolation de cl‚ CNG
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 4  RUNNING 
+                                (STOPPABLE, NOT_PAUSABLE, IGNORES_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: KtmRm
+DISPLAY_NAME: Service KtmRm pour Distributed Transaction Coordinator
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 1  STOPPED 
+        WIN32_EXIT_CODE    : 1077  (0x435)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: LanmanServer
+DISPLAY_NAME: Serveur
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 4  RUNNING 
+                                (STOPPABLE, NOT_PAUSABLE, IGNORES_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: LanmanWorkstation
+DISPLAY_NAME: Station de travail
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 4  RUNNING 
+                                (STOPPABLE, PAUSABLE, IGNORES_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: lfsvc
+DISPLAY_NAME: Service de g‚olocalisation
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 4  RUNNING 
+                                (STOPPABLE, NOT_PAUSABLE, IGNORES_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: LicenseManager
+DISPLAY_NAME: Serveur Gestionnaire de licences Windows
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 4  RUNNING 
+                                (STOPPABLE, NOT_PAUSABLE, IGNORES_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: lltdsvc
+DISPLAY_NAME: Mappage de d‚couverte de topologie de la couche de liaison
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 1  STOPPED 
+        WIN32_EXIT_CODE    : 1077  (0x435)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: lmhosts
+DISPLAY_NAME: Assistance NetBIOS sur TCP/IP
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 4  RUNNING 
+                                (STOPPABLE, NOT_PAUSABLE, IGNORES_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: LMS
+DISPLAY_NAME: Intel(R) Management and Security Application Local Management Service
+        TYPE               : 10  WIN32_OWN_PROCESS  
+        STATE              : 4  RUNNING 
+                                (STOPPABLE, NOT_PAUSABLE, ACCEPTS_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: LSM
+DISPLAY_NAME: Gestionnaire de session locale
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 4  RUNNING 
+                                (NOT_STOPPABLE, NOT_PAUSABLE, IGNORES_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: MapsBroker
+DISPLAY_NAME: Gestionnaire des cartes t‚l‚charg‚es
+        TYPE               : 10  WIN32_OWN_PROCESS  
+        STATE              : 1  STOPPED 
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: MozillaMaintenance
+DISPLAY_NAME: Mozilla Maintenance Service
+        TYPE               : 10  WIN32_OWN_PROCESS  
+        STATE              : 1  STOPPED 
+        WIN32_EXIT_CODE    : 1077  (0x435)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: MpsSvc
+DISPLAY_NAME: Pare-feu Windows
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 4  RUNNING 
+                                (STOPPABLE, NOT_PAUSABLE, IGNORES_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: MSDTC
+DISPLAY_NAME: Coordinateur de transactions distribu‚es
+        TYPE               : 10  WIN32_OWN_PROCESS  
+        STATE              : 1  STOPPED 
+        WIN32_EXIT_CODE    : 1077  (0x435)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: MSiSCSI
+DISPLAY_NAME: Service Initiateur iSCSI de Microsoft
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 1  STOPPED 
+        WIN32_EXIT_CODE    : 1077  (0x435)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: msiserver
+DISPLAY_NAME: Windows Installer
+        TYPE               : 10  WIN32_OWN_PROCESS  
+        STATE              : 1  STOPPED 
+        WIN32_EXIT_CODE    : 1077  (0x435)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: NAUpdate
+DISPLAY_NAME: Nero Update
+        TYPE               : 10  WIN32_OWN_PROCESS  
+        STATE              : 4  RUNNING 
+                                (STOPPABLE, NOT_PAUSABLE, ACCEPTS_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: NcaSvc
+DISPLAY_NAME: Assistant Connectivit‚ r‚seau
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 1  STOPPED 
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: NcbService
+DISPLAY_NAME: Service Broker pour les connexions r‚seau
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 4  RUNNING 
+                                (STOPPABLE, NOT_PAUSABLE, IGNORES_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: NcdAutoSetup
+DISPLAY_NAME: Configuration automatique des p‚riph‚riques connect‚s au r‚seau
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 1  STOPPED 
+        WIN32_EXIT_CODE    : 1077  (0x435)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: NeroBackItUpBackgroundService2018
+DISPLAY_NAME: Nero BackItUp Background Service 2018
+        TYPE               : 10  WIN32_OWN_PROCESS  
+        STATE              : 4  RUNNING 
+                                (STOPPABLE, NOT_PAUSABLE, ACCEPTS_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: Netlogon
+DISPLAY_NAME: Netlogon
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 1  STOPPED 
+        WIN32_EXIT_CODE    : 1077  (0x435)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: Netman
+DISPLAY_NAME: Connexions r‚seau
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 1  STOPPED 
+        WIN32_EXIT_CODE    : 1077  (0x435)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: netprofm
+DISPLAY_NAME: Service Liste des r‚seaux
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 4  RUNNING 
+                                (STOPPABLE, NOT_PAUSABLE, IGNORES_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: NetSetupSvc
+DISPLAY_NAME: Service Configuration du r‚seau
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 1  STOPPED 
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: NetTcpPortSharing
+DISPLAY_NAME: Service de partage de ports Net.Tcp
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 1  STOPPED 
+        WIN32_EXIT_CODE    : 1077  (0x435)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: NgcCtnrSvc
+DISPLAY_NAME: Conteneur Microsoft Passport
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 1  STOPPED 
+        WIN32_EXIT_CODE    : 1077  (0x435)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: NgcSvc
+DISPLAY_NAME: Microsoft Passport
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 1  STOPPED 
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: NlaSvc
+DISPLAY_NAME: Connaissance des emplacements r‚seau
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 4  RUNNING 
+                                (STOPPABLE, NOT_PAUSABLE, IGNORES_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: nsi
+DISPLAY_NAME: Service Interface du magasin r‚seau
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 4  RUNNING 
+                                (STOPPABLE, NOT_PAUSABLE, IGNORES_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: odserv
+DISPLAY_NAME: Microsoft Office Diagnostics Service
+        TYPE               : 10  WIN32_OWN_PROCESS  
+        STATE              : 1  STOPPED 
+        WIN32_EXIT_CODE    : 1077  (0x435)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: ose
+DISPLAY_NAME: Office Source Engine
+        TYPE               : 10  WIN32_OWN_PROCESS  
+        STATE              : 1  STOPPED 
+        WIN32_EXIT_CODE    : 1077  (0x435)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: p2pimsvc
+DISPLAY_NAME: Gestionnaire d?identit‚ r‚seau homologue
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 1  STOPPED 
+        WIN32_EXIT_CODE    : 1077  (0x435)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: p2psvc
+DISPLAY_NAME: Groupement de mise en r‚seau de pairs
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 1  STOPPED 
+        WIN32_EXIT_CODE    : 1077  (0x435)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: PcaSvc
+DISPLAY_NAME: Service de l?Assistant Compatibilit‚ des programmes
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 4  RUNNING 
+                                (STOPPABLE, NOT_PAUSABLE, ACCEPTS_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: PeerDistSvc
+DISPLAY_NAME: BranchCache
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 1  STOPPED 
+        WIN32_EXIT_CODE    : 1077  (0x435)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: PerfHost
+DISPLAY_NAME: H“te de DLL de compteur de performance
+        TYPE               : 10  WIN32_OWN_PROCESS  
+        STATE              : 1  STOPPED 
+        WIN32_EXIT_CODE    : 1077  (0x435)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: PhoneSvc
+DISPLAY_NAME: Service t‚l‚phonique
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 1  STOPPED 
+        WIN32_EXIT_CODE    : 1077  (0x435)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: pla
+DISPLAY_NAME: Journaux & alertes de performance
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 1  STOPPED 
+        WIN32_EXIT_CODE    : 1077  (0x435)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: PlugPlay
+DISPLAY_NAME: Plug-and-Play
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 4  RUNNING 
+                                (STOPPABLE, NOT_PAUSABLE, ACCEPTS_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: PNRPAutoReg
+DISPLAY_NAME: Service de publication des noms d?ordinateurs PNRP
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 1  STOPPED 
+        WIN32_EXIT_CODE    : 1077  (0x435)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: PNRPsvc
+DISPLAY_NAME: Protocole PNRP
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 1  STOPPED 
+        WIN32_EXIT_CODE    : 1077  (0x435)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: PolicyAgent
+DISPLAY_NAME: Agent de strat‚gie IPsec
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 4  RUNNING 
+                                (STOPPABLE, NOT_PAUSABLE, ACCEPTS_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: Power
+DISPLAY_NAME: Alimentation
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 4  RUNNING 
+                                (NOT_STOPPABLE, NOT_PAUSABLE, IGNORES_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: PrintNotify
+DISPLAY_NAME: Extensions et notifications des imprimantes
+        TYPE               : 120  WIN32_SHARE_PROCESS  (interactive)
+        STATE              : 1  STOPPED 
+        WIN32_EXIT_CODE    : 1077  (0x435)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: ProfSvc
+DISPLAY_NAME: Service de profil utilisateur
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 4  RUNNING 
+                                (STOPPABLE, NOT_PAUSABLE, ACCEPTS_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: QWAVE
+DISPLAY_NAME: Exp‚rience audio-vid‚o haute qualit‚ Windows
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 1  STOPPED 
+        WIN32_EXIT_CODE    : 1077  (0x435)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: RasAuto
+DISPLAY_NAME: Gestionnaire des connexions automatiques d?accŠs … distance
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 1  STOPPED 
+        WIN32_EXIT_CODE    : 1077  (0x435)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: RasMan
+DISPLAY_NAME: Gestionnaire des connexions d?accŠs … distance
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 1  STOPPED 
+        WIN32_EXIT_CODE    : 1077  (0x435)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: RemoteAccess
+DISPLAY_NAME: Routage et accŠs distant
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 1  STOPPED 
+        WIN32_EXIT_CODE    : 1077  (0x435)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: RemoteRegistry
+DISPLAY_NAME: Registre … distance
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 1  STOPPED 
+        WIN32_EXIT_CODE    : 1077  (0x435)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: RetailDemo
+DISPLAY_NAME: Service de d‚mo du magasin
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 1  STOPPED 
+        WIN32_EXIT_CODE    : 1077  (0x435)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: RmSvc
+DISPLAY_NAME: Service de gestion radio
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 1  STOPPED 
+        WIN32_EXIT_CODE    : 1077  (0x435)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: RpcEptMapper
+DISPLAY_NAME: Mappeur de point de terminaison RPC
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 4  RUNNING 
+                                (NOT_STOPPABLE, NOT_PAUSABLE, IGNORES_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: RpcLocator
+DISPLAY_NAME: Localisateur d?appels de proc‚dure distante (RPC)
+        TYPE               : 10  WIN32_OWN_PROCESS  
+        STATE              : 1  STOPPED 
+        WIN32_EXIT_CODE    : 1077  (0x435)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: RpcSs
+DISPLAY_NAME: Appel de proc‚dure distante (RPC)
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 4  RUNNING 
+                                (NOT_STOPPABLE, NOT_PAUSABLE, IGNORES_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: RtkAudioService
+DISPLAY_NAME: Realtek Audio Service
+        TYPE               : 10  WIN32_OWN_PROCESS  
+        STATE              : 4  RUNNING 
+                                (STOPPABLE, NOT_PAUSABLE, ACCEPTS_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: SamSs
+DISPLAY_NAME: Gestionnaire de comptes de s‚curit‚
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 4  RUNNING 
+                                (NOT_STOPPABLE, NOT_PAUSABLE, IGNORES_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: SbieSvc
+DISPLAY_NAME: Sandboxie Service
+        TYPE               : 10  WIN32_OWN_PROCESS  
+        STATE              : 4  RUNNING 
+                                (STOPPABLE, NOT_PAUSABLE, ACCEPTS_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: SCardSvr
+DISPLAY_NAME: Carte … puce
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 1  STOPPED 
+        WIN32_EXIT_CODE    : 1077  (0x435)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: ScDeviceEnum
+DISPLAY_NAME: Service d?‚num‚ration de p‚riph‚riques de carte … puce
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 1  STOPPED 
+        WIN32_EXIT_CODE    : 1077  (0x435)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: Schedule
+DISPLAY_NAME: Planificateur de tƒches
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 4  RUNNING 
+                                (STOPPABLE, NOT_PAUSABLE, ACCEPTS_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: SCPolicySvc
+DISPLAY_NAME: Strat‚gie de retrait de la carte … puce
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 1  STOPPED 
+        WIN32_EXIT_CODE    : 1077  (0x435)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: SDRSVC
+DISPLAY_NAME: Sauvegarde Windows
+        TYPE               : 10  WIN32_OWN_PROCESS  
+        STATE              : 1  STOPPED 
+        WIN32_EXIT_CODE    : 1077  (0x435)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: seclogon
+DISPLAY_NAME: Ouverture de session secondaire
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 1  STOPPED 
+        WIN32_EXIT_CODE    : 1077  (0x435)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: SENS
+DISPLAY_NAME: Service de notification d?‚v‚nements systŠme
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 4  RUNNING 
+                                (STOPPABLE, NOT_PAUSABLE, IGNORES_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: Sense
+DISPLAY_NAME: Service Protection avanc‚e contre les menaces Windows Defender
+        TYPE               : 10  WIN32_OWN_PROCESS  
+        STATE              : 1  STOPPED 
+        WIN32_EXIT_CODE    : 1077  (0x435)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: SensorDataService
+DISPLAY_NAME: Service Donn‚es de capteur
+        TYPE               : 10  WIN32_OWN_PROCESS  
+        STATE              : 1  STOPPED 
+        WIN32_EXIT_CODE    : 1077  (0x435)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: SensorService
+DISPLAY_NAME: Service de capteur
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 1  STOPPED 
+        WIN32_EXIT_CODE    : 1077  (0x435)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: SensrSvc
+DISPLAY_NAME: Service de surveillance des capteurs
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 1  STOPPED 
+        WIN32_EXIT_CODE    : 1077  (0x435)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: Service KMSELDI
+DISPLAY_NAME: Service KMSELDI
+        TYPE               : 10  WIN32_OWN_PROCESS  
+        STATE              : 4  RUNNING 
+                                (STOPPABLE, NOT_PAUSABLE, ACCEPTS_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: SessionEnv
+DISPLAY_NAME: Configuration des services Bureau … distance
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 1  STOPPED 
+        WIN32_EXIT_CODE    : 1077  (0x435)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: SharedAccess
+DISPLAY_NAME: Partage de connexion Internet (ICS)
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 1  STOPPED 
+        WIN32_EXIT_CODE    : 1077  (0x435)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: ShellHWDetection
+DISPLAY_NAME: D‚tection mat‚riel noyau
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 4  RUNNING 
+                                (STOPPABLE, NOT_PAUSABLE, IGNORES_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: shpamsvc
+DISPLAY_NAME: Shared PC Account Manager
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 1  STOPPED 
+        WIN32_EXIT_CODE    : 1077  (0x435)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: smphost
+DISPLAY_NAME: SMP de l?Espace de stockages Microsoft
+        TYPE               : 10  WIN32_OWN_PROCESS  
+        STATE              : 1  STOPPED 
+        WIN32_EXIT_CODE    : 1077  (0x435)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: SmsRouter
+DISPLAY_NAME: Service Routeur SMS Microsoft Windows.
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 4  RUNNING 
+                                (STOPPABLE, NOT_PAUSABLE, ACCEPTS_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: SNMPTRAP
+DISPLAY_NAME: Interruption SNMP
+        TYPE               : 10  WIN32_OWN_PROCESS  
+        STATE              : 1  STOPPED 
+        WIN32_EXIT_CODE    : 1077  (0x435)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: Spooler
+DISPLAY_NAME: Spouleur d?impression
+        TYPE               : 110  WIN32_OWN_PROCESS  (interactive)
+        STATE              : 4  RUNNING 
+                                (STOPPABLE, NOT_PAUSABLE, IGNORES_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: sppsvc
+DISPLAY_NAME: Protection logicielle
+        TYPE               : 10  WIN32_OWN_PROCESS  
+        STATE              : 1  STOPPED 
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: SSDPSRV
+DISPLAY_NAME: D‚couverte SSDP
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 4  RUNNING 
+                                (STOPPABLE, NOT_PAUSABLE, ACCEPTS_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: SstpSvc
+DISPLAY_NAME: ServiceÿSSTP (Secure Socket Tunneling Protocol)
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 1  STOPPED 
+        WIN32_EXIT_CODE    : 1077  (0x435)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: StateRepository
+DISPLAY_NAME: Service State Repository (StateRepository)
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 4  RUNNING 
+                                (STOPPABLE, NOT_PAUSABLE, ACCEPTS_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: stisvc
+DISPLAY_NAME: Acquisition d?image Windows (WIA)
+        TYPE               : 10  WIN32_OWN_PROCESS  
+        STATE              : 4  RUNNING 
+                                (STOPPABLE, PAUSABLE, ACCEPTS_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: StorSvc
+DISPLAY_NAME: Service de stockage
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 1  STOPPED 
+        WIN32_EXIT_CODE    : 1077  (0x435)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: SupportAssistAgent
+DISPLAY_NAME: Dell SupportAssist
+        TYPE               : 10  WIN32_OWN_PROCESS  
+        STATE              : 4  RUNNING 
+                                (STOPPABLE, NOT_PAUSABLE, ACCEPTS_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: svsvc
+DISPLAY_NAME: V‚rificateur de points
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 1  STOPPED 
+        WIN32_EXIT_CODE    : 1077  (0x435)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: swprv
+DISPLAY_NAME: Fournisseur de clich‚ instantan‚ de logiciel Microsoft
+        TYPE               : 10  WIN32_OWN_PROCESS  
+        STATE              : 1  STOPPED 
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: SysMain
+DISPLAY_NAME: Superfetch
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 4  RUNNING 
+                                (STOPPABLE, NOT_PAUSABLE, ACCEPTS_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: SystemEventsBroker
+DISPLAY_NAME: Service Broker des ‚v‚nements systŠme
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 4  RUNNING 
+                                (STOPPABLE, NOT_PAUSABLE, IGNORES_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: TabletInputService
+DISPLAY_NAME: Service du clavier tactile et du volet d?‚criture manuscrite
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 1  STOPPED 
+        WIN32_EXIT_CODE    : 1077  (0x435)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: TapiSrv
+DISPLAY_NAME: T‚l‚phonie
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 1  STOPPED 
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: TermService
+DISPLAY_NAME: Services Bureau … distance
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 1  STOPPED 
+        WIN32_EXIT_CODE    : 1077  (0x435)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: Themes
+DISPLAY_NAME: ThŠmes
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 4  RUNNING 
+                                (STOPPABLE, NOT_PAUSABLE, IGNORES_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: TieringEngineService
+DISPLAY_NAME: Gestion des niveaux de stockage
+        TYPE               : 10  WIN32_OWN_PROCESS  
+        STATE              : 1  STOPPED 
+        WIN32_EXIT_CODE    : 1077  (0x435)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: tiledatamodelsvc
+DISPLAY_NAME: Serveur de modŠles de donn‚es de vignette
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 4  RUNNING 
+                                (STOPPABLE, NOT_PAUSABLE, ACCEPTS_PRESHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: TimeBrokerSvc
+DISPLAY_NAME: Service Broker pour les ‚v‚nements horaires
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 4  RUNNING 
+                                (STOPPABLE, NOT_PAUSABLE, IGNORES_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: TrkWks
+DISPLAY_NAME: Client de suivi de lien distribu‚
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 1  STOPPED 
+        WIN32_EXIT_CODE    : 1077  (0x435)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: TrustedInstaller
+DISPLAY_NAME: Programme d?installation pour les modules Windows
+        TYPE               : 10  WIN32_OWN_PROCESS  
+        STATE              : 1  STOPPED 
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: tzautoupdate
+DISPLAY_NAME: Programme de mise … jour automatique du fuseau horaire
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 1  STOPPED 
+        WIN32_EXIT_CODE    : 1077  (0x435)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: UevAgentService
+DISPLAY_NAME: Service User Experience Virtualization
+        TYPE               : 10  WIN32_OWN_PROCESS  
+        STATE              : 1  STOPPED 
+        WIN32_EXIT_CODE    : 1077  (0x435)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: UI0Detect
+DISPLAY_NAME: D‚tection de services interactifs
+        TYPE               : 110  WIN32_OWN_PROCESS  (interactive)
+        STATE              : 1  STOPPED 
+        WIN32_EXIT_CODE    : 1077  (0x435)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: UmRdpService
+DISPLAY_NAME: Redirecteur de port du mode utilisateur des services Bureau … distance
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 1  STOPPED 
+        WIN32_EXIT_CODE    : 1077  (0x435)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: upnphost
+DISPLAY_NAME: H“te de p‚riph‚rique UPnP
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 1  STOPPED 
+        WIN32_EXIT_CODE    : 1077  (0x435)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: UserManager
+DISPLAY_NAME: Gestionnaire des utilisateurs
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 4  RUNNING 
+                                (STOPPABLE, NOT_PAUSABLE, IGNORES_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: UsoSvc
+DISPLAY_NAME: Service Update Orchestrator pour Windows Update
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 1  STOPPED 
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: VaultSvc
+DISPLAY_NAME: Gestionnaire d?informations d?identification
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 4  RUNNING 
+                                (STOPPABLE, NOT_PAUSABLE, ACCEPTS_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: vds
+DISPLAY_NAME: Disque virtuel
+        TYPE               : 10  WIN32_OWN_PROCESS  
+        STATE              : 1  STOPPED 
+        WIN32_EXIT_CODE    : 1077  (0x435)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: VMAuthdService
+DISPLAY_NAME: VMware Authorization Service
+        TYPE               : 10  WIN32_OWN_PROCESS  
+        STATE              : 4  RUNNING 
+                                (STOPPABLE, NOT_PAUSABLE, IGNORES_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: vmicguestinterface
+DISPLAY_NAME: Interface de services d?invit‚ Hyper-V
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 1  STOPPED 
+        WIN32_EXIT_CODE    : 1077  (0x435)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: vmicheartbeat
+DISPLAY_NAME: Service Pulsation Microsoft Hyper-V
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 1  STOPPED 
+        WIN32_EXIT_CODE    : 1077  (0x435)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: vmickvpexchange
+DISPLAY_NAME: Service ?change de donn‚es Microsoft Hyper-V
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 1  STOPPED 
+        WIN32_EXIT_CODE    : 1077  (0x435)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: vmicrdv
+DISPLAY_NAME: Service de virtualisation Bureau … distance Hyper-V
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 1  STOPPED 
+        WIN32_EXIT_CODE    : 1077  (0x435)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: vmicshutdown
+DISPLAY_NAME: Service Arrˆt de l?invit‚ Microsoft Hyper-V
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 1  STOPPED 
+        WIN32_EXIT_CODE    : 1077  (0x435)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: vmictimesync
+DISPLAY_NAME: Service Synchronisation date/heure Microsoft Hyper-V
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 1  STOPPED 
+        WIN32_EXIT_CODE    : 1077  (0x435)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: vmicvmsession
+DISPLAY_NAME: Service Hyper-V PowerShell Direct
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 1  STOPPED 
+        WIN32_EXIT_CODE    : 1077  (0x435)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: vmicvss
+DISPLAY_NAME: Requˆte du service VSS Microsoft Hyper-V
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 1  STOPPED 
+        WIN32_EXIT_CODE    : 1077  (0x435)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: VMnetDHCP
+DISPLAY_NAME: VMware DHCP Service
+        TYPE               : 10  WIN32_OWN_PROCESS  
+        STATE              : 4  RUNNING 
+                                (STOPPABLE, NOT_PAUSABLE, IGNORES_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: VMUSBArbService
+DISPLAY_NAME: VMware USB Arbitration Service
+        TYPE               : 10  WIN32_OWN_PROCESS  
+        STATE              : 4  RUNNING 
+                                (STOPPABLE, NOT_PAUSABLE, IGNORES_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: VMware NAT Service
+DISPLAY_NAME: VMware NAT Service
+        TYPE               : 10  WIN32_OWN_PROCESS  
+        STATE              : 4  RUNNING 
+                                (STOPPABLE, NOT_PAUSABLE, IGNORES_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: VMwareHostd
+DISPLAY_NAME: VMware Workstation Server
+        TYPE               : 10  WIN32_OWN_PROCESS  
+        STATE              : 1  STOPPED 
+        WIN32_EXIT_CODE    : 1077  (0x435)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: VSS
+DISPLAY_NAME: Clich‚ instantan‚ des volumes
+        TYPE               : 10  WIN32_OWN_PROCESS  
+        STATE              : 1  STOPPED 
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: w32time
+DISPLAY_NAME: Temps Windows
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 1  STOPPED 
+        WIN32_EXIT_CODE    : 1077  (0x435)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: WalletService
+DISPLAY_NAME: WalletService
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 1  STOPPED 
+        WIN32_EXIT_CODE    : 1077  (0x435)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: wbengine
+DISPLAY_NAME: Service de moteur de sauvegarde en mode bloc
+        TYPE               : 10  WIN32_OWN_PROCESS  
+        STATE              : 1  STOPPED 
+        WIN32_EXIT_CODE    : 1077  (0x435)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: WbioSrvc
+DISPLAY_NAME: Service de biom‚trie Windows
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 1  STOPPED 
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: Wcmsvc
+DISPLAY_NAME: Gestionnaire des connexions Windows
+        TYPE               : 10  WIN32_OWN_PROCESS  
+        STATE              : 4  RUNNING 
+                                (STOPPABLE, NOT_PAUSABLE, ACCEPTS_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: wcncsvc
+DISPLAY_NAME: Windows Connect Nowÿ-ÿRegistre de configuration
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 1  STOPPED 
+        WIN32_EXIT_CODE    : 1077  (0x435)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: WdiServiceHost
+DISPLAY_NAME: Service h“te WDIServiceHost
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 4  RUNNING 
+                                (STOPPABLE, NOT_PAUSABLE, ACCEPTS_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: WdiSystemHost
+DISPLAY_NAME: H“te systŠme de diagnostics
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 4  RUNNING 
+                                (STOPPABLE, NOT_PAUSABLE, ACCEPTS_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: WdNisSvc
+DISPLAY_NAME: Service Inspection du r‚seau Windows Defender
+        TYPE               : 10  WIN32_OWN_PROCESS  
+        STATE              : 1  STOPPED 
+        WIN32_EXIT_CODE    : 1077  (0x435)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: WebClient
+DISPLAY_NAME: WebClient
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 1  STOPPED 
+        WIN32_EXIT_CODE    : 1077  (0x435)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: Wecsvc
+DISPLAY_NAME: Collecteur d?‚v‚nements de Windows
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 1  STOPPED 
+        WIN32_EXIT_CODE    : 1077  (0x435)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: WEPHOSTSVC
+DISPLAY_NAME: Service h“te du fournisseur de chiffrement Windows
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 1  STOPPED 
+        WIN32_EXIT_CODE    : 1077  (0x435)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: wercplsupport
+DISPLAY_NAME: Prise en charge de l?application Rapports et solutions aux problŠmes du Panneau de configuration
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 1  STOPPED 
+        WIN32_EXIT_CODE    : 1077  (0x435)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: WerSvc
+DISPLAY_NAME: Service de rapport d?erreurs Windows
+        TYPE               : 10  WIN32_OWN_PROCESS  
+        STATE              : 1  STOPPED 
+        WIN32_EXIT_CODE    : 1077  (0x435)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: WiaRpc
+DISPLAY_NAME: ?v‚nements d?acquisition d?images fixes
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 1  STOPPED 
+        WIN32_EXIT_CODE    : 1077  (0x435)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: WinDefend
+DISPLAY_NAME: Service Windows Defender
+        TYPE               : 10  WIN32_OWN_PROCESS  
+        STATE              : 1  STOPPED 
+        WIN32_EXIT_CODE    : 1077  (0x435)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: WinHttpAutoProxySvc
+DISPLAY_NAME: Service de d‚couverte automatique de Proxy Web pour les services HTTP Windows
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 4  RUNNING 
+                                (STOPPABLE, NOT_PAUSABLE, IGNORES_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: Winmgmt
+DISPLAY_NAME: Infrastructure de gestion Windows
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 4  RUNNING 
+                                (STOPPABLE, PAUSABLE, ACCEPTS_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: WinRM
+DISPLAY_NAME: Gestion … distance de Windows (Gestion WSM)
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 1  STOPPED 
+        WIN32_EXIT_CODE    : 1077  (0x435)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: wisvc
+DISPLAY_NAME: Service Windows Insider
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 1  STOPPED 
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: WlanSvc
+DISPLAY_NAME: Service de configuration automatique WLAN
+        TYPE               : 10  WIN32_OWN_PROCESS  
+        STATE              : 4  RUNNING 
+                                (STOPPABLE, NOT_PAUSABLE, ACCEPTS_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: wlidsvc
+DISPLAY_NAME: Assistant Connexion avec un compte Microsoft
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 1  STOPPED 
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: wmiApSrv
+DISPLAY_NAME: Carte de performance WMI
+        TYPE               : 10  WIN32_OWN_PROCESS  
+        STATE              : 4  RUNNING 
+                                (STOPPABLE, NOT_PAUSABLE, IGNORES_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: WMPNetworkSvc
+DISPLAY_NAME: Service Partage r‚seau du Lecteur Windows Media
+        TYPE               : 10  WIN32_OWN_PROCESS  
+        STATE              : 1  STOPPED 
+        WIN32_EXIT_CODE    : 1077  (0x435)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: workfolderssvc
+DISPLAY_NAME: Dossiers de travail
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 1  STOPPED 
+        WIN32_EXIT_CODE    : 1077  (0x435)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: WPDBusEnum
+DISPLAY_NAME: Service ?num‚rateur d?appareil mobile
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 1  STOPPED 
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: WpnService
+DISPLAY_NAME: Service du systŠme de notifications Push Windows
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 4  RUNNING 
+                                (STOPPABLE, NOT_PAUSABLE, IGNORES_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: wscsvc
+DISPLAY_NAME: Centre de s‚curit‚
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 4  RUNNING 
+                                (STOPPABLE, NOT_PAUSABLE, ACCEPTS_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: WSearch
+DISPLAY_NAME: Windows Search
+        TYPE               : 10  WIN32_OWN_PROCESS  
+        STATE              : 4  RUNNING 
+                                (STOPPABLE, NOT_PAUSABLE, ACCEPTS_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: wuauserv
+DISPLAY_NAME: Windows Update
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 4  RUNNING 
+                                (STOPPABLE, NOT_PAUSABLE, ACCEPTS_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: wudfsvc
+DISPLAY_NAME: Windows Driver Foundation - Infrastructure de pilote mode-utilisateur
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 4  RUNNING 
+                                (NOT_STOPPABLE, NOT_PAUSABLE, IGNORES_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: WwanSvc
+DISPLAY_NAME: Service de configuration automatique WWAN
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 4  RUNNING 
+                                (STOPPABLE, NOT_PAUSABLE, ACCEPTS_PRESHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: XblAuthManager
+DISPLAY_NAME: Gestionnaire d'authentification Xbox Live
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 1  STOPPED 
+        WIN32_EXIT_CODE    : 1077  (0x435)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: XblGameSave
+DISPLAY_NAME: Jeu sauvegard‚ sur Xbox Live
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 1  STOPPED 
+        WIN32_EXIT_CODE    : 1077  (0x435)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: XboxNetApiSvc
+DISPLAY_NAME: Service de mise en r‚seau Xbox Live
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 1  STOPPED 
+        WIN32_EXIT_CODE    : 1077  (0x435)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: CDPUserSvc_477e0
+DISPLAY_NAME: CDPUserSvc_477e0
+        TYPE               : e0  USER_SHARE_PROCESS INSTANCE  
+        STATE              : 4  RUNNING 
+                                (STOPPABLE, NOT_PAUSABLE, IGNORES_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: MessagingService_477e0
+DISPLAY_NAME: MessagingService_477e0
+        TYPE               : e0  USER_SHARE_PROCESS INSTANCE  
+        STATE              : 1  STOPPED 
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: OneSyncSvc_477e0
+DISPLAY_NAME: H“te de synchronisation_477e0
+        TYPE               : e0  USER_SHARE_PROCESS INSTANCE  
+        STATE              : 4  RUNNING 
+                                (STOPPABLE, NOT_PAUSABLE, IGNORES_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: PimIndexMaintenanceSvc_477e0
+DISPLAY_NAME: Donn‚es de contacts_477e0
+        TYPE               : e0  USER_SHARE_PROCESS INSTANCE  
+        STATE              : 4  RUNNING 
+                                (STOPPABLE, NOT_PAUSABLE, ACCEPTS_PRESHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: UnistoreSvc_477e0
+DISPLAY_NAME: Stockage des donn‚es utilisateur_477e0
+        TYPE               : e0  USER_SHARE_PROCESS INSTANCE  
+        STATE              : 4  RUNNING 
+                                (STOPPABLE, NOT_PAUSABLE, ACCEPTS_PRESHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: UserDataSvc_477e0
+DISPLAY_NAME: AccŠs aux donn‚es utilisateur_477e0
+        TYPE               : e0  USER_SHARE_PROCESS INSTANCE  
+        STATE              : 4  RUNNING 
+                                (STOPPABLE, NOT_PAUSABLE, ACCEPTS_PRESHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: WpnUserService_477e0
+DISPLAY_NAME: Service utilisateur de notifications Push Windows_477e0
+        TYPE               : e0  USER_SHARE_PROCESS INSTANCE  
+        STATE              : 1  STOPPED 
+        WIN32_EXIT_CODE    : 1077  (0x435)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0

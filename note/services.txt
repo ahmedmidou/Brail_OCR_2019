@@ -1,0 +1,223 @@
+﻿https://commandwindows.com/sc.htm
+
+
+
+    This command has a number of functions but one is to determine the status of a service at system startup. A service can be set to run automatically, manually or not at all. The commands are
+
+sc config ServiceName start= flag
+
+    Here ServiceName is the name of the service and flag has one of the values auto, demand. or disabled . For example, to set a service to run manually the command is
+sc config ServiceName start= demand
+
+    Note that there must be a space after the equals sign. The correct value for the parameter ServiceName may not always be obvious and the next command can be used to find it for all services. 
+sc query
+    Information about services and drivers can be obtained with this command. Used alone it returns a list of running services with various information about the service. Lists can be inconvenient to read on a screen and they can be redirected to a text file. To create a text list of running services use the command
+    sc query > serviceslist.txt
+    The path for the text file serviceslist.txt can be anywhere that is convenient. To create a list of all services, use
+    sc query type= service state= all > allserviceslist.txt
+    To create a list of active drivers, use
+    sc query type= driver
+    Or for a list of everything, use
+    sc query state= all
+sc start
+    To start up a service that is not running, use
+    sc start ServiceName
+sc stop
+    To stop a running service, use
+    sc stop ServiceName
+    However, some services cannot or should not be stopped. 
+
+
+
+
+The Service Controller utility SC is a powerful command-line utility for managing Windows services. Its various capabilities and functions are discussed here.
+Many processes and functions of the Windows operating system and other software are classified under the general rubric of “services”. Managing services with the graphical facility called the Services Console is
+discussed at a sister site. In addition to a GUI method of managing services, Windows XP, Vista, and 7 also have a powerful command-line utility.This utility, the Service Controller, is opened by entering "sc' into the command prompt and contains a large assembly of subcommands that we will survey.
+
+The command-line method of managing services has the advantage of being available for scripts. It also allows for quickly stopping and starting services for troubleshooting purposes. Systems administrators use it for managing services on networks and for very detailed configuration. For the average PC user, it provides a quick and easy way to turn services on and off to see how system performance is affected.
+The SC subcommands
+
+The "sc" command comes with numerous subcommands. A list can be seen by entering "sc /?" into a command prompt. There is also a list in the Windows Help and Support Center. Altogether, 24 subcommands are listed. Each subcommand in turn may have a subset of different commands. The table below shows a selection of the subcommands and their functions that are of most relevance to a typical PC owner.
+Command 	Function
+sc config 	Configures service startup and login accounts
+sc continue 	Resumes a paused service
+sc enumdepend 	
+
+Lists the services that cannot run unless the specified service is running
+sc failure 	Specifies what action to take upon failure of the service
+sc pause 	Pauses a service
+sc qc 	Displays the configuration of a particular service
+sc query 	Displays information about the specified service, driver, type of service, or type of driver
+sc start 	Starts a service running
+sc stop 	Sends a STOP request to a service (not all will respond)
+Examples of some useful ways to apply SC
+
+The suite of commands that are available are very powerful and allow for much configuring of services. Although not all functions will be of interest to the average PC use, some are applicable to everyday experience. You can learn if a service is runninng, stop, start. or pause it, and determine if it will run when the system is started up. Here are examples of some commands that I think might be of interest.
+
+sc config
+
+    This command has a number of functions but one is to determine the status of a service at system startup. A service can be set to run automatically, manually or not at all. The commands are
+    sc config ServiceName start= flag
+    Here ServiceName is the name of the service and flag has one of the values auto, demand. or disabled . For example, to set a service to run manually the command is
+    sc config ServiceName start= demand
+    Note that there must be a space after the equals sign. The correct value for the parameter ServiceName may not always be obvious and the next command can be used to find it for all services. 
+sc query
+    Information about services and drivers can be obtained with this command. Used alone it returns a list of running services with various information about the service. Lists can be inconvenient to read on a screen and they can be redirected to a text file. To create a text list of running services use the command
+    sc query > serviceslist.txt
+    The path for the text file serviceslist.txt can be anywhere that is convenient. To create a list of all services, use
+sc query type= service state= all > allserviceslist.txt
+    To create a list of active drivers, use
+    sc query type= driver 
+
+
+
+
+
+
+
+*******************************************************************************************************************************************
+Microsoft Windows [version 10.0.14393]
+(c) 2016 Microsoft Corporation. Tous droits réservés.
+
+C:\Windows\system32>sc /?
+
+ERREUR : commande non reconnue
+
+DESCRIPTION :
+        SC est un utilitaire en ligne de commande utilisé pour
+        communiquer avec le Gestionnaire de contrôle des services et les services.
+SYNTAXE :
+        sc <serveur> [commande] [nom service] <option1> <option2>...
+
+
+        L’option <serveur> a le format « \\NomServeur »
+        Pour obtenir de l’aide sur une commande, entrez : « sc [commande] »
+        Commandes :
+          query-----------Interroge l’état d’un service ou
+                          énumère l’état des types de services.
+          queryex---------Interroge l’état étendu d’un service ou énumère
+                          l’état des types de services.
+          start-----------Démarre un service.
+          pause-----------Envoie une demande de contrôle PAUSE à un service.
+          interrogate-----Envoie une demande de contrôle INTERROGATE à un
+                          service.
+          continue--------Envoie une demande de contrôle CONTINUE à
+                          un service.
+          stop------------Envoie une demande STOP à un service.
+          config----------Modifie la configuration d’un service (persistant).
+          description-----Modifie la description d’un service.
+          failure---------Modifie les actions entreprises par un service en
+                          cas d’échec.
+          failureflag-----Modifie l’indicateur des actions d’échec
+                          d’un service.
+          sidtype---------Modifie le type de SID d’un service.
+          privs-----------Modifie les privilèges requis d’un service.
+          managedaccount--Modifie le service pour marquer le mot de passe
+                          du compte de service comme étant géré par LSA.
+          qc-------------- Interroge les informations de configuration
+                          d’un service.
+          qdescription----Interroge la description d’un service.
+          qfailure--------Interroge les actions entreprises par un service
+                          en cas d’échec.
+          qfailureflag----Interroge l’indicateur des actions d’échec
+                          d’un service.
+          qsidtype--------Interroge le type de SID d’un service.
+          qprivs----------Interroge les privilèges requis d’un service.
+          qtriggerinfo----Interroge les paramètres de déclenchement d’un
+                          service.
+          qpreferrednode--Interroge le noeud NUMA favori d’un service.
+          qmanagedaccount-Interroge si un service utilise un compte avec un
+                          mot de passe géré par LSA.
+          qprotection-----Interroge le niveau de protection de processus
+        quserservice----Interroge une instance locale d’un modèle de service utilisateur.
+          delete----------Supprime un service (du Registre).
+          create----------Crée un service (en l’ajoutant au Registre).
+          control---------Envoie un contrôle à un service.
+          sdshow----------Affiche le descripteur de sécurité d’un service.
+          sdset-----------Définit le descripteur de sécurité d’un service.
+          showsid---------Affiche la chaîne du SID de service correspondant à
+                          un nom arbitraire.
+          triggerinfo-----Configure les paramètres de déclenchement d’un
+                          service.
+          preferrednode---Définit le noeud NUMA favori d’un service.
+          GetDisplayName--Obtient le nom complet DisplayName d’un service.
+          GetKeyName------Obtient le nom de clé d’un service (ServiceKeyName).
+          EnumDepend------Énumère les dépendances d’un service.
+
+        Les commandes suivantes ne nécessitent pas de nom de service :
+        sc <serveur> <commande> <option>
+          boot------------(ok | bad) Indique si le dernier démarrage doit
+                          être enregistré comme la dernière configuration de démarrage valide connue
+          Lock------------Verrouille la base de données des services
+          QueryLock-------Interroge l’état de verrouillage (LockStatus) d’une base de données du Gestionnaire de contrôle des services
+                          (SCManager)
+EXEMPLE:
+        sc start MyService
+
+
+OPTIONS QUERY et QUERYEX :
+        Si la commande query est suivie d'un nom de service, l'état de
+        ce service est renvoyé, d'autres options ne s'appliquant pas
+        dans ce cas. Si la commande query est utilisée seule ou suivie de
+        l'une des options listées ci-dessous, les services sont énumérés.
+    type=    Type des services à énumérer (driver, service, all).
+             (par défaut = service)
+    state=   État des services à énumérer (inactive, all).
+             (par défaut = active)
+    bufsize= Taille (en octets) du tampon d'énumération
+             (par défaut = 4096)
+    ri=      Numéro d'index de reprise auquel doit commencer l'énumération\n"
+             (par défaut = 0)
+    group=   Groupe de services à énumérer.
+             (par défaut = tous les groupes)
+
+EXEMPLES DE SYNTAXE
+sc query                - Énumère l'état des services et pilotes actifs.
+sc query eventlog      - Affiche l'état du service Affichage des messages.
+sc queryex eventlog    - Affiche l'état étendu du service Affichage des
+                          messages.
+sc query type= driver   - Énumère uniquement les pilotes actifs.
+sc query type= service  - Énumère uniquement les services Win32.
+sc query state= all     - Énumère tous les services et pilotes.
+sc query bufsize= 50    - Utilise un tampon d'une taille de 50 octets pour
+                          l'énumération.
+sc query ri= 14         - Utilise le numéro d'index de reprise 14 pour
+                          l'énumération.
+sc queryex group= ""   - Énumère les services actifs n'appartenant pas à un
+                          groupe.
+sc query type= interact - Énumère tous les services interactifs.
+sc query type= driver group= NDIS     - Énumère tous les services NDIS.
+
+
+C:\Windows\system32>
+C:\Windows\system32>
+
+
+
+
+
+
+******************************//////////////////////////////////////******************/////////////////////////////////////////////
+
+
+SERVICE_NAME: vmictimesync
+DISPLAY_NAME: Service Synchronisation date/heure Microsoft Hyper-V
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 1  STOPPED 
+        WIN32_EXIT_CODE    : 1077  (0x435)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+
+
+SERVICE_NAME: w32time
+DISPLAY_NAME: Temps Windows
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 1  STOPPED 
+        WIN32_EXIT_CODE    : 1077  (0x435)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+

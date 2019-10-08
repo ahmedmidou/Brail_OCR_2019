@@ -1,0 +1,141 @@
+﻿https://fr.wikihow.com/modifier-l%27heure-et-la-date-d%27un-ordinateur-en-utilisant-l%27invite-de-commande
+
+
+
+ws 7Windows VistaWindows XP
+
+Sur les ordinateurs d'aujourd'hui, la date et l'heure peuvent être facilement changées grâce à l'affichage de l'horloge du panneau de commande. Vous pouvez également les modifier à l'aide de l'invite de commandes ! Cet article wikiHow va vous apprendre à le faire en utilisant des étapes faciles à comprendre
+Méthode 1
+Windows 7
+
+    Image intitulée Change the Computer Time and Date Using the Command Prompt Step 1
+    1
+    Ouvrez l'invite de commandes.
+        Cliquez sur Démarrer.
+        Saisissez « invite de commandes ».
+        Dans les résultats, cliquez sur Invite de commandes.
+    Image intitulée Change the Computer Time and Date Using the Command Prompt Step 2
+    2
+    Saisissez le mot « time ». Faites un espace, puis entrez la nouvelle heure au format suivant :
+        
+hh : mm : ss. Par exemple : time 17 : 34 : 00, time 08 : 15 : 00, etc.
+        Appuyez sur Entrer ou Retour.
+    Image intitulée Change the Computer Time and Date Using the Command Prompt Step 3
+    3
+    Saisissez le mot « date ». Faites un espace, puis entrez la nouvelle date au format suivant :
+        jj/mm/aaaa. Par exemple : date 15/05/2009, date 25/12/2012, etc.
+        Appuyez sur la touche Entrer ou Retour.
+    Image intitulée Change the Computer Time and Date Using the Command Prompt Step 4
+    4
+    Vérifiez l'heure en bas à droite de l'écran. L'heure devrait avoir été modifiée avec succès.
+
+Méthode 2
+Windows Vista
+
+    Image intitulée Change the Computer Time and Date Using the Command Prompt Step 5
+    1
+    Ouvrez l'invite de commandes.
+        Cliquez sur le bouton Démarrer.
+        Cliquez sur Tous les programmes.
+        Cliquez sur Accessoires.
+        Cliquez sur Invite de commandes.
+    Image intitulée Change the Computer Time and Date Using the Command Prompt Step 6
+    2
+    Saisissez le mot « time ». Faites un espace, puis entrez la nouvelle heure au format suivant :
+        hh : mm : ss. Par exemple : time 08 : 34 : 00, time 18 : 15 : 00, etc.
+        Appuyez sur la touche Entrer ou Retour.
+    Image intitulée Change the Computer Time and Date Using the Command Prompt Step 7
+    3
+    Saisissez le mot « date ». Faites un espace, puis entrez la nouvelle date au format suivant :
+        jj/mm/aaaa. Par exemple : date 15/01/2009, date 22/10/1999, etc.
+        Appuyez sur la touche Entrer ou Retour.
+    Image intitulée Change the Computer Time and Date Using the Command Prompt Step 8
+    4
+    Vérifiez l'heure en bas à droite de l'écran. L'heure devrait avoir été modifiée avec succès.
+
+Méthode 3
+Windows XP
+
+    Image intitulée Change the Computer Time and Date Using the Command Prompt Step 9
+    1
+    Ouvrez l'invite de commandes.
+        Cliquez sur Exécuter.
+        Saisissez « cmd », puis appuyez sur Entrer ou Retour.
+    Image intitulée Change the Computer Time and Date Using the Command Prompt Step 10
+    2
+    Entrez le mot « time ». Faites un espace, puis entrez la nouvelle heure au format suivant :
+        hh : mm : ss. Par exemple : time 05 : 34 : 00, time 17 : 15 : 00, etc.
+        Appuyez sur Entrer ou Retour.
+    Image intitulée Change the Computer Time and Date Using the Command Prompt Step 11
+    3
+    Saisissez le mot « date ». Faites un espace, puis entrez la nouvelle date au format suivant :
+        jj/mm/aaaa. Par exemple : date 05/12/2009, date 22/08/1999, etc.
+        Appuyez sur la touche Entrer ou Retour.
+    Image intitulée Change the Computer Time and Date Using the Command Prompt Step 12
+    4
+    Vérifiez l'heure en bas à droite de l'écran. L'heure devrait avoir été modifiée avec succès.
+
+Conseils
+
+    L'heure et la date doivent être saisies d'une manière reconnue par l'ordinateur.
+    Vous pouvez être amené(e) à essayer plusieurs fois avant de connaitre sur le bout des doigts cette manière de changer l'heure et la date.
+
+
+
+
+******************************************************************************************************************************
+
+
+
+
+
+Microsoft Windows [version 10.0.14393]
+(c) 2016 Microsoft Corporation. Tous droits réservés.
+
+C:\Windows\system32>date
+La date du jour est : 21/04/2019
+Entrez la nouvelle date : (jj-mm-aa)
+
+C:\Windows\system32>date /?
+Affiche ou modifie la date.
+
+DATE [date]
+
+Entrez DATE sans paramètres pour afficher la date système et être invité à la
+modifier. Appuyez sur ENTRÉE pour conserver la même date.
+
+Si les extensions de commandes sont activées, la commande DATE prend en charge
+le commutateur /T qui fait que la commande n’indique que la date, sans
+demander d’en entrer une nouvelle.
+
+C:\Windows\system32>
+C:\Windows\system32>
+
+
+
+
+
+
+
+C:\Windows\system32>time /?
+Affiche ou modifie l’heure système.
+
+TIME [/T | heure]
+
+TIME sans paramètres affiche l’heure en cours et demande une nouvelle heure.
+Appuyez sur ENTRÉE pour conserver la même heure.
+
+Si les extensions de commandes sont activées, la commande TIME prend en charge
+le commutateur /T qui fait que la commande n’indique que l’heure, sans
+demander d’en entrer une nouvelle.
+
+C:\Windows\system32>
+
+
+
+
+C:\Windows\system32>date /T
+21/04/2019
+
+C:\Windows\system32>
+
